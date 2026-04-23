@@ -9,5 +9,5 @@ class User(SQLModel, table=True):
     email: EmailStr = Field(unique=True, index=True)
     hashed_password: str 
     role: str 
-    institution_id: UUID = Field(default=None, foreign_key='institution.id')
+    institution_id: UUID | None = Field(default=None, foreign_key='institution.id')
     created_at: datetime = Field(default_factory= lambda: datetime.now(timezone.utc))
