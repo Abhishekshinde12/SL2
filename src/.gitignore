@@ -38,4 +38,4 @@ build/
 *.egg-info/
 
 structure.txt
-.launch.json
+launch.json
