@@ -1,0 +1,41 @@
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+bin/
+lib/
+
+# --- Environment Variables (Secrets) ---
+.env
+.env.*
+!.env.example
+
+# --- Database ---
+*.sqlite3
+*.db
+.alembic/
+
+# --- IDEs and Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Packaging & Distribution ---
+dist/
+build/
+*.egg-info/
+
+structure.txt
+.vscode/
