@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 class Session(SQLModel, table=True):
     id: UUID = Field(default_factory=uuid4, primary_key=True)
     batch_id: UUID = Field(foreign_key='batch.id')
-    trainer_id: UUID = Field(foreign_key='trainer.id')
+    trainer_id: UUID = Field(foreign_key='user.id') # instead of trainer.id set to user.id 
     title: str 
     date: datetime 
     start_time: str
