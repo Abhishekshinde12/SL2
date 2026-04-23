@@ -18,6 +18,10 @@ class UserBase(BaseModel):
     role: str 
     institution_id: Optional[UUID] = None 
 
+class UserLogin(BaseModel):
+    email: EmailStr 
+    password: str
+
 class UserCreate(UserBase):
     password: str
 
@@ -28,4 +32,5 @@ class UserRead(UserBase):
 class UserUpdate(BaseModel):
     name: Optional[str] = None 
     email: Optional[EmailStr] = None 
+    password: Optional[str] = None
     institution_id: Optional[UUID] = None 
